@@ -4,7 +4,7 @@ const Counter = () => {
   const [count, setcount] = useState(0);
 
   return (
-    <>
+    <div className="flex items-center flex-col w-full pt-2">
       <h2 className="text-lg font-semibold">Counter</h2>
       <div className="flex item-center">
         <button
@@ -21,7 +21,7 @@ const Counter = () => {
           +
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

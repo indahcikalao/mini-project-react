@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { useTransition, animated } from "@react-spring/web";
+import NaviMenu from "./NaviMenu";
 
 const Navi = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -37,12 +38,9 @@ const Navi = () => {
           item && (
             <animated.div
               style={style}
-              className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow py-3 px-5"
+              className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow py-3 px-5 flex flex-col"
             >
-              <span className="font-bold">Menu</span>
-              <ul>
-                <li>Home</li>
-              </ul>
+              <NaviMenu setShowMenu={setShowMenu} />
             </animated.div>
           )
       )}

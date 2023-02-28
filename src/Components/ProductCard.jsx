@@ -13,7 +13,7 @@ function ProductCard({ product }) {
         ></div>
       </Link>
       <div className="p-3">
-        <h3 className="font-bold text-xl mb-3">
+        <h3 className="font-bold text-lg mb-3">
           <Link to={`/product/${product.id}`}>{product.name}</Link>
         </h3>
         <div className="font-bold mb-3">$ {product.price}</div>

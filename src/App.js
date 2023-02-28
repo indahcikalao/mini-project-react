@@ -6,20 +6,24 @@ import Home from "./Pages/Home";
 import Counter from "./Components/Counter";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import Product from "./Pages/Product";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <div className="relative pb-20 min-h-screen">
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact-me" element={<Contact />} />
-        <Route path="/counter" element={<Counter />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact-me" element={<Contact />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/product/:id" element={<Product />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

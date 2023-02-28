@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-300 text-center p-4 w-full absolute bottom-0">
+    <footer className="bg-gray-200 text-center text-xs p-3 absolute bottom-0 w-full border-t">
       <p>
         &copy; {new Date().getFullYear()} Mini React Project by{" "}
         <span className="font-bold">Indah Cikal Al Gyfary Okthaviany</span>
